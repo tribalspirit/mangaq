@@ -1,0 +1,144 @@
+@font-face { font-family: 'Manga Speak Web'; src: local('MangaSpeak Web'), local('MangaSpeakWeb-Regular'), url('../fonts/manga_speak.ttf'); }
+
+@font-face { font-family: 'Japanese MPlus Web'; src: local('JapaneseMPlus Web'), local('JapaneseMPlus-Regular'), url('../fonts/mplus-2-regular-sub.ttf'); }
+
+
+body {
+  background-color: #282c34;
+  padding: 0 100px;
+  font-family: 'Manga Speak Web';
+  color: white;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {
+  margin: 0 20px;
+	display: inline-block;
+}
+
+nav a {
+	display:inline-block;
+	padding:0 10px;	
+	color:#61dafb;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+  background: #61dafb;
+  color: #282c34;
+  cursor: pointer;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+  top: 60px; 
+  right: -100px;
+}
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+nav ul ul li {
+	width:230px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+.en, .cn, .jp {
+  cursor: pointer;
+}
+    
+.en:before {
+    content: url(../../en.svg);
+    display: inline-block;
+    width: 22px;
+    height: 10px;
+    margin: 0px 10px;
+}
+
+.cn:before {
+  content: url(../../cn.svg);
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  margin: 0px 10px;
+}
+
+
+.jp:before {
+  content: url(../../jp.svg);
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  margin: 0px 10px;
+}
+
+.viewer {
+  display: flex;
+  flex-direction: row;
+}
+
+.viewer .image-container {
+  flex: 0 3 auto;
+  margin: 10px;
+}
+
+.viewer .details-container {
+  flex: 0 1 auto;
+  padding: 0 100px;
+}
+
+.bubble {
+  position: relative;
+  color: black;
+  background-color: white;
+  font-size: 1em;
+}
+
+.jp-text {
+  font-family: 'Japanese MPlus Web';
+  writing-mode: vertical-rl;
+}
