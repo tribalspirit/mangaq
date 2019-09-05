@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 /*
     // PREVIOUSLY
 const Menu = () => (
@@ -13,10 +14,10 @@ const Menu = () => (
 
 // 
 const MenuLinks = () => ([
-    <li><a className='link' key='home' href='/'>Home</a></li>,
-    <li><a className='link' key='manga' href='/manga'>Manga</a></li>,
-    <li><a className='link' key='grammar' href='/grammar'>Grammar</a></li>,
-    <li><a className='link' key='help' href='/help'>Help</a></li>,
+    <Link className='link' key='home' to='/'>Home</Link>,
+    <Link className='link' key='manga' to='/manga'>Manga</Link>,
+    <Link className='link' key='grammar' to='/grammar'>Grammar</Link>,
+    <Link className='link' key='help' to='/help'>Help</Link>,
 ])
 
 export default MenuLinks

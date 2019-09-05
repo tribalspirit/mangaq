@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import testImg from '../../assets/manga/4.jpg'
 
 const samplePage = {
@@ -6,7 +6,8 @@ const samplePage = {
     alt: 'page 4',
     bubbles: [
         {
-            dimensions: {
+        id: 123,
+        dimensions: {
             x: 300,
             y: 225,
             width: 40,
@@ -14,9 +15,15 @@ const samplePage = {
             fontSize: 0.8
         },
         captions: {
-            en: 'Damned cat',
-            jp: 'å‘ªã„ã®çŒ«ãŒã‚„ã£ã¦æ¥ãŸ',
-            details: 'å‘ªã„ (ã®ã‚ã„, noroi) - cursed, damned; ã® - relation particle; çŒ« (ã­ã“, neko) - cat; ãŒ (ga) - subject particle'
+            en: 'Damned cat is back!',
+            jp: 'Žô‚¢‚Ì”L‚â‚Á‚Ä—ˆ‚½',
+            details: [
+                'Žô‚¢ (‚Ì‚ë‚¢, noroi) - cursed, damned;',
+                '‚Ì - relation particle;',
+                '”L (‚Ë‚±, neko) - cat;',
+                '‚ª (ga) - subject particle;'
+
+            ]
         }
     }]
 }
@@ -30,16 +37,21 @@ const getStyle = ({ x, y, width, height, fontSize }) => ({
     fontSize: `${fontSize}em`
 })
 
-const MangaReader = () => (
-    <div className='viewer'>
+
+const MangaReader = () => {
+    const [captions, setCaptions] = useState({ en: '', jp: '', details: [] });
+
+    return (<div className='viewer'>
         <div className='image-container'>
             <img src={samplePage.imgUrl} className='manga-page' alt={samplePage.alt}/>
-            {samplePage.bubbles.map(b => (<div className='bubble jp-text' style={getStyle(b.dimensions)}>{b.captions.jp}</div>))}
+            {samplePage.bubbles.map((b) => (<div key={b.id} onClick={() => setCaptions(b.captions)} className='bubble jp-text' style={getStyle(b.dimensions)}>{b.captions.jp}</div>))}
         </div>
         <div className='details-container'>
-            <p>Quisque nibh mauris, finibus vel vulputate vel, condimentum sit amet libero. Nulla gravida nisl erat, sed malesuada neque auctor at. Sed mauris metus, faucibus ut pretium eu, congue ut leo. Praesent in porta lacus. Vestibulum volutpat, ipsum dapibus tincidunt vulputate, nibh lacus iaculis odio, in tempus tellus nibh a lorem. Pellentesque tristique non enim sed scelerisque. Pellentesque ac eros ac orci efficitur molestie. Donec eget est lobortis arcu tempor suscipit. Vestibulum vitae sem ac ante sagittis laoreet rhoncus sed ex. Nam eget porta leo. Maecenas dui eros, imperdiet eget nibh ac, facilisis placerat odio.</p>
+            <p>{captions.jp}</p>
+            <p>{captions.en}</p>
+            {captions.details.map((e, idx) => (<p key={idx}>{e}</p>))}
         </div>
     </div>
-)
+)}
 
 export default MangaReader

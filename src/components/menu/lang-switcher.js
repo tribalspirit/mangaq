@@ -25,7 +25,7 @@ class LangSwitcher extends React.Component {
 
     render() {
         return (
-            <li className={this.state.selected.value}><a href='#'>{this.state.selected.label}</a>
+            <li className={this.state.selected.value}><a className='link' href='#'>{this.state.selected.label}</a>
                 <ul>
                     {this._renderOptions(LANG_LIST)}
                 </ul>        

@@ -54,22 +54,25 @@ nav ul li {
 	display: inline-block;
 }
 
-nav a {
-	display:inline-block;
-	padding:0 10px;	
-	color:#61dafb;
-	font-size:20px;
+.link {
+	display: inline-block;
+	padding: 0 10px;	
+	color: #61dafb;
+	font-size: 20px;
 	line-height: 60px;
-	text-decoration:none;
+	text-decoration: none;
 }
 
-nav a:hover { 
+.link:hover { 
   background: #61dafb;
   color: #282c34;
   cursor: pointer;
 }
 
 nav ul ul {
+	color: #61dafb;
+	font-size: 20px;
+	line-height: 60px;
 	display: none;
 	position: absolute; 
   top: 60px; 
@@ -77,13 +80,14 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-	display:inherit;
+	display: inherit;
 }
 
 nav ul ul li {
-	width:230px;
-	float:none;
-	display:list-item;
+  width: 230px;
+  background-color: #282c34;
+	float: none;
+	display: list-item;
 	position: relative;
 }
 
