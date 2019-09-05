@@ -13,7 +13,7 @@ function App() {
         <Menu />
       </header>
 
-      <BrowserRouter basename="/mangaq">
+      <BrowserRouter basename="/mangaq/">
         <Route exact path='/' component={() => (<div>sdfsdfsdf</div>)} />
         <Route path='/manga' component={MangaReader} />
         <Route path='/grammar' component={Grammar} />
