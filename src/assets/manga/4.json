@@ -1,0 +1,24 @@
+{
+    "alt": "page 4",
+    "bubbles": [
+        {
+        "id": 123,
+        "dimensions": {
+            "x": 300,
+            "y": 225,
+            "width": 40,
+            "height": 90,
+            "fontSize": 0.8
+        },
+        "captions": {
+            "en": "Damned cat is back!",
+            "jp": "呪いの猫\nやって来た",
+            "details": 
+            ["呪い (のろい, noroi) - cursed, damned;",
+            "の - relation particle;",
+            "猫 (ねこ, neko) - cat;",
+            "が (ga) - subject particle;"
+            ]
+        }
+    }]
+}

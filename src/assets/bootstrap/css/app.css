@@ -140,6 +140,11 @@ nav ul ul li {
   color: black;
   background-color: white;
   font-size: 1em;
+  cursor: pointer;
+}
+
+.bubble:hover {
+  color: blue;
 }
 
 .jp-text {
