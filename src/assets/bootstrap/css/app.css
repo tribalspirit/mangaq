@@ -140,14 +140,20 @@ nav ul ul li {
   color: black;
   background-color: white;
   font-size: 1em;
+  border-radius: 20px;
   cursor: pointer;
 }
 
-.bubble:hover {
+.lexem:hover {
   color: blue;
 }
 
+.lexem-tooltip {
+  font-family: 'Manga Speak Web';
+  writing-mode: horizontal-tb;
+}
+
 .jp-text {
-  font-family: 'Japanese MPlus Web';
+  font-family: 'Manga Speak Web';
   writing-mode: vertical-rl;
 }
