@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mangaq/static/css/main.fe0c2cb4.chunk.css",
+    "main.js": "/mangaq/static/js/main.2f93f1ec.chunk.js",
+    "main.js.map": "/mangaq/static/js/main.2f93f1ec.chunk.js.map",
+    "runtime~main.js": "/mangaq/static/js/runtime~main.07a26b48.js",
+    "runtime~main.js.map": "/mangaq/static/js/runtime~main.07a26b48.js.map",
+    "static/js/2.c9fed804.chunk.js": "/mangaq/static/js/2.c9fed804.chunk.js",
+    "static/js/2.c9fed804.chunk.js.map": "/mangaq/static/js/2.c9fed804.chunk.js.map",
+    "index.html": "/mangaq/index.html",
+    "precache-manifest.25bdd38d1a714a1f42d93d98362fa401.js": "/mangaq/precache-manifest.25bdd38d1a714a1f42d93d98362fa401.js",
+    "service-worker.js": "/mangaq/service-worker.js",
+    "static/css/main.fe0c2cb4.chunk.css.map": "/mangaq/static/css/main.fe0c2cb4.chunk.css.map",
+    "static/media/4.jpg": "/mangaq/static/media/4.cf4ae245.jpg",
+    "static/media/app.css": "/mangaq/static/media/mplus-2-regular-sub.56b48e4e.ttf"
+  }
+}
