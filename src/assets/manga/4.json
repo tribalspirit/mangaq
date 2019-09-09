@@ -7,18 +7,17 @@
                 "x": 300,
                 "y": 225,
                 "width": 40,
-                "height": 90,
+                "height": 80,
                 "fontSize": 0.8
             },
-            "originalCaptions": "qwe qweq 11\n qew ew qweqwe",
+            "originalCaptions": "呪い|の|猫|が\n|\nやって来た",
             "translatedCaptions": "Damned cat is back!",
             "detailedCaptions": [
-                "(we, noroi) - cursed, damned",
+                "(, noroi) - cursed, damned",
                 "relation particle",
                 "(qwe, neko) - cat",
                 "subject particle",
-                " yasu - to do",
-                "kuru - to come (past tense), blahblah"
+                "yatte kita - yatte = to do, kuru - come back, blahahah"
             ]
         }
     ]

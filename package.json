@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://tribalspirit.github.io/mangaq/",
   "dependencies": {
+    "encoding-japanese": "^1.0.29",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",

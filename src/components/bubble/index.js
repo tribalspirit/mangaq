@@ -13,15 +13,16 @@ const getStyle = ({ x, y, width, height, fontSize }) => ({
 
 const _renderLexem = (lexem, idx, details) => (<span key={idx} className='lexem' data-tip={details}>{lexem}</span>)
 
-const Bubble = ({ originalCaptions, options, detailedCaptions, id }) => (
-    <div
+const Bubble = ({ originalCaptions, options, detailedCaptions, id }) => {
+    const captions = originalCaptions.split('|')
+    return (<div
         key={`bubble-${id}`}
         className='bubble jp-text'
         style={getStyle(options)}>
-        {originalCaptions.toString().split(' ').map((i, idx) => _renderLexem(i, idx, detailedCaptions[idx]))}
+        {captions.map((i, idx) => _renderLexem(i, idx, detailedCaptions[idx]))}
         <ReactTooltip key={`tooltip-${id}`} className='lexem-tooltip'/>
     </div>
-)
+)}
 
 Bubble.propTypes = {
     id: PropTypes.number,

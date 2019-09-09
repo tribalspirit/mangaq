@@ -2,12 +2,15 @@ import React, { useState }  from 'react'
 import testImg from '../../assets/manga/4.jpg'
 import samplePage from '../../assets/manga/4.json'
 import Bubble from '../../components/bubble'
+import encoding from 'encoding-japanese'
 
 const MangaReader = () => {
     const [captions, setCaptions] = useState({ en: '', jp: '', details: [] });
 
     const data = (samplePage)
-
+    var detected = encoding.detect(data)
+    console.log(detected)
+    
     return (<div className='viewer'>
         <div className='image-container'>
             <img src={testImg} className='manga-page' alt={samplePage.alt}/>
